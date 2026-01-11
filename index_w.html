@@ -72,45 +72,73 @@ footer a:hover {
 
 <body>
 
-<!-- 1 -->
+<!-- All system 1 -->
 <p>Lemuroid "All in One"</p> <!-- https://github.com/Swordfish90/Lemuroid -->
-
 <div id="lemuroid">Loading...</div>
 
 <br><div class="center-separator"></div>
 
-<!-- 2 -->
-<p>Vita3K Android "PSVita"</p> <!-- https://github.com/Vita3K/Vita3K-Android -->
-
-<div id="vita3k-android">Loading...</div>
-
-<br><div class="center-separator"></div>
-
-<!-- 3 -->
-<p>melonDS Android "DS - DSi"</p> <!-- https://github.com/rafaelvcaetano/melonDS-android -->
-
-<div id="melonds-android">Loading...</div>
+<!-- All system 2 -->
+<p>RetroArch "All in One"</p> <!-- https://github.com/libretro/RetroArch -->
+<div id="retroarch">Loading...</div>
 
 <br><div class="center-separator"></div>
 
-<!-- 4 -->
-<p>Azahar "3DS"</p> <!--https://github.com/azahar-emu/azahar -->
+<!-- . -->
 
-<div id="azahar">Loading...</div>
+<!-- Console 1 -->
+<p>DuckStation "PSX"</p> <!-- https://github.com/stenzek/duckstation -->
+<div id="duckstation">Loading...</div>
 
 <br><div class="center-separator"></div>
 
-<!-- 5 -->
+<!-- Console 2-1 -->
 <p>NetherSX2-classic "PS2"</p> <!-- https://github.com/Trixarian/NetherSX2-classic -->
-
 <div id="netherSX2-classic">Loading...</div>
 
 <br><div class="center-separator"></div>
 
-<!-- 6 -->
+<!-- Console 2-2 -->
 <p>NetherSX2-patch "PS2"</p> <!-- https://github.com/Trixarian/NetherSX2-patch -->
-
 <div id="netherSX2-patch">Loading...</div>
+
+<br><div class="center-separator"></div>
+
+<!-- Console 3 -->
+<p>Eden "Switch"</p> <!-- https://eden-emu.dev/ -->
+<div id="eden">Loading...</div>
+
+<br><div class="center-separator"></div>
+
+<!-- Console 4 -->
+<p>Flycast "Dreamcast, Naomi and Naomi 2"</p> <!-- "https://github.com/flyinghead/flycast" -->
+<div id="flycast">Loading...</div>
+
+<br><div class="center-separator"></div>
+
+<!-- . -->
+
+<!-- Console Portable 1 -->
+<p>PPSSPP "PSP"</p> <!-- https://github.com/hrydgard/ppsspp -->
+<div id="ppsspp">Loading...</div>
+
+<div class="center-separator"></div>
+
+<!-- Console Portable 2 -->
+<p>Vita3K Android "PSVita"</p> <!-- https://github.com/Vita3K/Vita3K-Android -->
+<div id="vita3k-android">Loading...</div>
+
+<br><div class="center-separator"></div>
+
+<!-- Console Portable 3 -->
+<p>melonDS Android "DS - DSi"</p> <!-- https://github.com/rafaelvcaetano/melonDS-android -->
+<div id="melonds-android">Loading...</div>
+
+<br><div class="center-separator"></div>
+
+<!-- Console Portable 4 -->
+<p>Azahar "3DS"</p> <!--https://github.com/azahar-emu/azahar -->
+<div id="azahar">Loading...</div>
 
 <br><div class="center-separator"></div>
 
@@ -134,12 +162,18 @@ async function fetchInfo(repo, elementId) {
 }
 
 fetchInfo("Swordfish90/Lemuroid", "lemuroid");
+fetchInfo("libretro/RetroArch", "retroarch");
+
+fetchInfo("stenzek/duckstation", "duckstation");
+fetchInfo("Trixarian/NetherSX2-classic", "netherSX2-classic");
+fetchInfo("Trixarian/NetherSX2-patch", "netherSX2-patch");
+fetchInfo("eden-emulator/Releases", "eden");
+fetchInfo("flyinghead/flycast", "flycast");
+
+fetchInfo("hrydgard/ppsspp", "ppsspp");
 fetchInfo("Vita3K/Vita3K-Android", "vita3k-android");
 fetchInfo("rafaelvcaetano/melonDS-android", "melonds-android");
 fetchInfo("azahar-emu/azahar", "azahar");
-fetchInfo("Trixarian/NetherSX2-classic", "netherSX2-classic");
-fetchInfo("Trixarian/NetherSX2-patch", "netherSX2-patch");
-//fetchInfo(".../...", "...");
 
 </script>
 
