@@ -72,73 +72,84 @@ footer a:hover {
 
 <body>
 
+<p>Reserve for emulators available on Android.</p>
+<br><div class="center-separator"></div>
+
+<!-- Launcher 1 -->
+<p>iiSU "Frontend"</p> <!-- https://github.com/iisu-network/iiSU -->
+<div id="iisu">Loading...</div>
+
+<br><div class="center-separator"></div>
+
 <!-- All system 1 -->
 <p>Lemuroid "All in One"</p> <!-- https://github.com/Swordfish90/Lemuroid -->
 <div id="lemuroid">Loading...</div>
 
 <br><div class="center-separator"></div>
 
-<!-- All system 2 -->
-<p>RetroArch "All in One"</p> <!-- https://github.com/libretro/RetroArch -->
-<div id="retroarch">Loading...</div>
-
-<br><div class="center-separator"></div>
-
-<!-- . -->
-
 <!-- Console 1 -->
-<p>DuckStation "PSX"</p> <!-- https://github.com/stenzek/duckstation -->
-<div id="duckstation">Loading...</div>
+<p>aps3e "PS3"</p> <!-- https://github.com/aenu1/aps3e -->
+<div id="aps3e">Loading...</div>
 
-<br><div class="center-separator"></div>
+<br>
 
 <!-- Console 2-1 -->
 <p>NetherSX2-classic "PS2"</p> <!-- https://github.com/Trixarian/NetherSX2-classic -->
 <div id="netherSX2-classic">Loading...</div>
 
-<br><div class="center-separator"></div>
+<br>
 
 <!-- Console 2-2 -->
 <p>NetherSX2-patch "PS2"</p> <!-- https://github.com/Trixarian/NetherSX2-patch -->
 <div id="netherSX2-patch">Loading...</div>
 
-<br><div class="center-separator"></div>
+<br>
 
 <!-- Console 3 -->
-<p>Eden "Switch"</p> <!-- https://eden-emu.dev/ -->
-<div id="eden">Loading...</div>
+<p>EmuCoreX "PS2"</p> <!-- https://github.com/sashkinbro/EmuCoreX -->
+<div id="emucorex">Loading...</div>
 
-<br><div class="center-separator"></div>
+<br>
 
 <!-- Console 4 -->
-<p>Flycast "Dreamcast, Naomi and Naomi 2"</p> <!-- "https://github.com/flyinghead/flycast" -->
+<p>Cemu "Wii U"</p> <!-- https://github.com/SSimco/Cemu -->
+<div id="cemu">Loading...</div>
+
+<br>
+
+<!-- Console 5 -->
+<p>Flycast "Dreamcast, Naomi and Naomi 2"</p> <!-- https://github.com/flyinghead/flycast -->
 <div id="flycast">Loading...</div>
 
 <br><div class="center-separator"></div>
 
-<!-- . -->
-
 <!-- Console Portable 1 -->
-<p>PPSSPP "PSP"</p> <!-- https://github.com/hrydgard/ppsspp -->
-<div id="ppsspp">Loading...</div>
-
-<div class="center-separator"></div>
-
-<!-- Console Portable 2 -->
 <p>Vita3K Android "PSVita"</p> <!-- https://github.com/Vita3K/Vita3K-Android -->
 <div id="vita3k-android">Loading...</div>
 
-<br><div class="center-separator"></div>
+<br>
+
+<!-- Console Portable 2 -->
+<p>EmuCoreV "PSVita"</p> <!-- https://github.com/sashkinbro/EmuCoreV -->
+<div id="emucorev">Loading...</div>
+
+<br>
 
 <!-- Console Portable 3 -->
 <p>melonDS Android "DS - DSi"</p> <!-- https://github.com/rafaelvcaetano/melonDS-android -->
 <div id="melonds-android">Loading...</div>
 
-<br><div class="center-separator"></div>
+<br>
 
 <!-- Console Portable 4 -->
-<p>Azahar "3DS"</p> <!--https://github.com/azahar-emu/azahar -->
+<p>Azahar "3DS"</p> <!-- https://github.com/azahar-emu/azahar -->
 <div id="azahar">Loading...</div>
+
+<br><div class="center-separator"></div>
+
+<!-- Ordinateur 1 -->
+<p>GameNative "PC"</p> <!-- https://github.com/utkarshdalal/GameNative -->
+<div id="gamenative">Loading...</div>
 
 <br><div class="center-separator"></div>
 
@@ -161,19 +172,23 @@ async function fetchInfo(repo, elementId) {
     }
 }
 
-fetchInfo("Swordfish90/Lemuroid", "lemuroid");
-fetchInfo("libretro/RetroArch", "retroarch");
+fetchInfo("iisu-network/iiSU", "iisu");
 
-fetchInfo("stenzek/duckstation", "duckstation");
+fetchInfo("Swordfish90/Lemuroid", "lemuroid");
+
+fetchInfo("aenu1/aps3e", "aps3e");
 fetchInfo("Trixarian/NetherSX2-classic", "netherSX2-classic");
 fetchInfo("Trixarian/NetherSX2-patch", "netherSX2-patch");
-fetchInfo("eden-emulator/Releases", "eden");
+fetchInfo("sashkinbro/EmuCoreX", "emucorex");
+fetchInfo("SSimco/Cemu", "cemu");
 fetchInfo("flyinghead/flycast", "flycast");
 
-fetchInfo("hrydgard/ppsspp", "ppsspp");
 fetchInfo("Vita3K/Vita3K-Android", "vita3k-android");
+fetchInfo("sashkinbro/EmuCoreV", "emucorev");
 fetchInfo("rafaelvcaetano/melonDS-android", "melonds-android");
 fetchInfo("azahar-emu/azahar", "azahar");
+
+fetchInfo("utkarshdalal/GameNative", "gamenative");
 
 </script>
 
